@@ -3,8 +3,6 @@ import './GamePieces.css';
 import GameImage from './GameImage.js';
 
 
-
-
 export default class GamePieces extends Component {
   lastImageClickedSource = null;
   render() {
@@ -21,18 +19,17 @@ export default class GamePieces extends Component {
         <GameImage onClick={this.handleImageClicked} Source='./images/broadcity7.jpg' />
         <GameImage onClick={this.handleImageClicked} Source='./images/broadcity8.jpg' />
         <GameImage onClick={this.handleImageClicked} Source='./images/broadcity9.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity10.jpg' />
+        <GameImage onClick={this.handleImageClicked} Source='./images/background.jpg' />
         <GameImage onClick={this.handleImageClicked} Source='./images/broadcity11.jpg' />
         <GameImage onClick={this.handleImageClicked} Source='./images/broadcity12.jpg' />
 
       </div>
     </div>
 
-
   }
   handleImageClicked = (Source) => {
     console.log(Source);
-    if (Source == this.lastImageClickedSource) {
+    if (Source === this.lastImageClickedSource) {
       console.log("not unique image")
     } else {
       console.log("unique image")
@@ -41,7 +38,15 @@ export default class GamePieces extends Component {
     this.lastImageClickedSource = Source;
 
   }
+  // const shuffle = require('shuffle-array'),
+  // GameImage = [1, 2, 3, 4, 5];
+
+  // shuffle(collection);
+
+  // console.log(collection);
 }
+
+
 
 
 //then reset game
