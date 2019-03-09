@@ -7,43 +7,40 @@ export default class GamePieces extends Component {
   lastImageClickedSource = null;
   render() {
 
-    const { className } = this.props;
+    const { className, gamePieces } = this.props;
     return <div className={className}>
-      <div className="GamePieces-grid">
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity1.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity2.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity3.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity4.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity5.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity6.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity7.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity8.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity9.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/background.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity11.jpg' />
-        <GameImage onClick={this.handleImageClicked} Source='./images/broadcity12.jpg' />
 
+      <div className="GamePieces-grid">
+        {gamePieces.map(source => <GameImage onClick={this.handleImageClicked} Source={source} />
+        )}
       </div>
     </div>
 
+
+
   }
   handleImageClicked = (Source) => {
+    const { incrementScore } = this.props;
     console.log(Source);
     if (Source === this.lastImageClickedSource) {
       console.log("not unique image")
+      incrementScore(false)
     } else {
+      incrementScore(true)
       console.log("unique image")
+
     }
 
     this.lastImageClickedSource = Source;
 
   }
-  // const shuffle = require('shuffle-array'),
-  // GameImage = [1, 2, 3, 4, 5];
 
-  // shuffle(collection);
 
-  // console.log(collection);
+
+
+
+
+
 }
 
 

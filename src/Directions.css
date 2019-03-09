@@ -1,3 +1,24 @@
-.className:itemCenterDirections{
+
+.header{
+  font-family: 'Sigmar One', cursive;
+  color: white;
+ }
+.DirectImage{
+  position: absolute;
+  height: 100%;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.header{
+  position: relative;
+}
+
+.WhereTheImageGoes{
+  position: relative;
+  height: 100%;
+  width: 100%;
 
 }

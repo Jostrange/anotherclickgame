@@ -1,8 +1,9 @@
 .GamePieces-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto; 
-  grid-gap: -22px 2px;
-
-  
+  grid-gap: 25px 25px;
+  padding: 25px;
 }
+
+

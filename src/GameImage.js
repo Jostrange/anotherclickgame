@@ -8,13 +8,10 @@ export default class GameImage extends Component {
     const { className, Source, onClick } = this.props;
 
     return <div className={className} onClick={this.handleImageClicked} >
-      <img src={this.props.Source} />
-
-
+      <img className="gameImageStyle" src={this.props.Source} />
 
 
     </div>
-
 
   }
   handleImageClicked = () => {
@@ -22,4 +19,6 @@ export default class GameImage extends Component {
     console.log();
     onClick(Source);
   }
+
+  
 }

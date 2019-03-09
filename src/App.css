@@ -8,17 +8,21 @@
 
 .App-nav-bar {
   flex: 0 0 100px;
-  background: red;
+  background:grey;
 }
 
 .App-directions {
   flex: 0 0 250px;
-  background: blue;
+  background:#A5C4D4;
+  height: 250px;
+  
 }
 
 .App-game-images {
   flex: 1 0 auto;
-  background: purple;
+ background-color:black;
+
+  
 }
 
 .App-link {
