@@ -19,5 +19,7 @@ JavaScript
 
 Install this respository onto your machine and then 'NPM install' on your terminal. 
 
+https://i.imgur.com/AAuoO52.jpg
+
 
 
