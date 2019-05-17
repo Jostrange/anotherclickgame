@@ -1,4 +1,6 @@
 
+## Live Demo
+https://anotherclickygame.herokuapp.com/
 
 ## Click Game
 
