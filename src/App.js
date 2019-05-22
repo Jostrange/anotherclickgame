@@ -36,9 +36,9 @@ class App extends Component {
       this.setState({ score: this.state.score + 1, status: "You guessed correctly" })
     } else {
       this.setState({ score: 0, status: "You guessed incorrectly" })
-      this.shuffleGamePieces();
+      
     }
-
+    this.shuffleGamePieces();
   }
 
   shuffleGamePieces = () => {
